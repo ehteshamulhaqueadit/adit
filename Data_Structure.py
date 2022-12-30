@@ -43,3 +43,9 @@ class Array:
                 temp[i]=self.items[count]
                 count+=1
         self.items = tuple(temp)
+        
+    def __getitem__(self,index):                # Making the object subscriptable
+        return self.items[index]                # square bracket will work
+    
+    
+    
